@@ -359,7 +359,7 @@ async function run() {
         console.log("Pinged your deployment. You successfully connected to MongoDB!");
     } finally {
         // Ensures that the client will close when you finish/error
-        // await client.close();
+        await client.close();
         console.log('never stops')
     }
 }
@@ -367,7 +367,7 @@ run().catch(console.dir);
 
 
 app.get('/', (req, res) => {
-    res.send('Att. server is running')
+    res.send('Att. server is runningggggggggggggggg')
 })
 
 app.listen(port, () => {
